@@ -1,13 +1,13 @@
-# PrivateBrain
+# Sentra
 
 **The private intelligence layer for the AI-native enterprise.**
 
-A judge-ready, frontend-heavy ideathon prototype. PrivateBrain turns a fictional company's
+A judge-ready, frontend-heavy ideathon prototype. Sentra turns a fictional company's
 (NexaCore Systems) fragmented knowledge into a living organizational brain — with memory,
 decisions, temporal reconstruction, a knowledge graph, role-based access and a governed
 context API for AI agents.
 
-> **RAG searches documents. PrivateBrain understands the organization.**
+> **RAG searches documents. Sentra understands the organization.**
 
 This is a **synthetic prototype built for demonstration**. NexaCore Systems, its people,
 customers and incidents are fictional. All connectors and model routing are simulated and
@@ -102,4 +102,4 @@ syncs, uploads) append to an in-memory audit log. See [ARCHITECTURE.md](ARCHITEC
 
 ---
 
-*PrivateBrain — ideathon prototype. Synthetic data throughout.*
+*Sentra — ideathon prototype. Synthetic data throughout.*
