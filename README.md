@@ -39,7 +39,7 @@ npm run build && npm run preview
 
 | Surface | What to try |
 |---|---|
-| **Landing** | `Enter Company Brain` or `View Architecture` |
+| **Landing** | `Enter Sentra` or `View Architecture` |
 | **Overview** | 8,420 memories / 1,146 entities / 4,782 relationships; memory growth chart; live graph snapshot; security posture |
 | **Ask Brain** | Ask *“Why was Project Orion delayed?”* — animated 6-stage pipeline, structured answer, 6 clickable evidence cards, *Why this answer?* metadata |
 | **Role switching** | Bottom-left user card → switch CEO → Intern → **ask the same question again** |
