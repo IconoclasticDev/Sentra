@@ -1,6 +1,6 @@
 # Sentra
 
-**The private intelligence layer for the AI-native enterprise.**
+**A Drift-Aware Local LLM Framework for Enterprise Operations.**
 
 A judge-ready, frontend-heavy ideathon prototype. Sentra turns a fictional company's
 (NexaCore Systems) fragmented knowledge into a living organizational brain — with memory,
