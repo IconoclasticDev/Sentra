@@ -1,0 +1,92 @@
+{
+  "company": {
+    "name": "Northstar Systems",
+    "industry": "Enterprise workflow intelligence",
+    "description": "Synthetic company for the Private Company Brain ideathon prototype.",
+    "privacy_mode": "Customer-controlled / local",
+    "brain_version": "PB-2.0",
+    "indexed_at": "2026-09-15T16:55:00"
+  },
+  "users": [
+    {"id":"u1","name":"Maya Kapoor","role":"CEO","department":"Leadership","clearance":4},
+    {"id":"u2","name":"Arjun Mehta","role":"VP Engineering","department":"Engineering","clearance":3},
+    {"id":"u3","name":"Rhea Shah","role":"Product Intern","department":"Product","clearance":1},
+    {"id":"u4","name":"Kunal Verma","role":"Staff ML Engineer","department":"AI Platform","clearance":3},
+    {"id":"u5","name":"Sana Iyer","role":"Security Lead","department":"Security","clearance":4}
+  ],
+  "projects": [
+    {"id":"p1","name":"Project Orion","status":"Private rollout","description":"Customer-controlled inference and secure agent context platform.","classification":2},
+    {"id":"p2","name":"Project Atlas","status":"In production","description":"Workflow orchestration layer for enterprise automations.","classification":2},
+    {"id":"p3","name":"Project Northstar","status":"Discovery","description":"Next-generation organizational intelligence product.","classification":2}
+  ],
+  "customers": [
+    {"id":"c1","name":"Acme Industrial","classification":3,"status":"Expansion pending","summary":"Large industrial account evaluating private deployment because of sensitive operational prompts, customer-controlled inference and data residency requirements."},
+    {"id":"c2","name":"Helix Bank","classification":4,"status":"Strategic pilot","summary":"Regulated financial institution testing isolated AI workflows with strict internal-only access."},
+    {"id":"c3","name":"Lumen Health","classification":2,"status":"Active","summary":"Mid-market customer using Atlas for internal workflow automation."}
+  ],
+  "documents": [
+    {"id":"d1","project_id":"p1","title":"Orion architecture review — April","date":"2026-04-18","classification":3,"type":"architecture_doc","source_system":"Google Drive","author_id":"u2","content":"Load testing showed p95 latency above the 500ms target at enterprise concurrency. Noisy-neighbor effects appeared in the shared inference gateway. The review recommended isolated inference cells for high-value customers."},
+    {"id":"d2","project_id":"p1","title":"Orion security review — May","date":"2026-05-12","classification":4,"type":"security_doc","source_system":"Confluence","author_id":"u5","content":"Security review made customer-controlled inference and stronger tenant isolation release requirements for regulated workloads. External model calls require an explicit policy decision and auditable routing."},
+    {"id":"d3","project_id":"p1","title":"Orion rollout plan — September","date":"2026-09-05","classification":2,"type":"plan","source_system":"Notion","author_id":"u2","content":"Private inference cells are now the default for regulated workloads. Remaining delivery work: GPU scheduling, automated failover, and a clearer operator experience for deployment health."},
+    {"id":"d4","project_id":"p2","title":"Atlas operating model","date":"2026-07-08","classification":2,"type":"strategy","source_system":"Notion","author_id":"u1","content":"Atlas focuses on deterministic enterprise workflow automation with human approval for irreversible actions and audit trails for every workflow run."},
+    {"id":"d5","project_id":"p3","title":"Northstar discovery notes","date":"2026-08-21","classification":2,"type":"research","source_system":"Google Drive","author_id":"u1","content":"Customers describe the same problem: knowledge is fragmented across chat, docs, ticketing, code, meetings and CRM. They want AI to understand institutional context, not just retrieve snippets."},
+    {"id":"d6","project_id":"p1","title":"Orion customer requirements matrix","date":"2026-06-02","classification":3,"type":"customer_research","source_system":"Airtable","author_id":"u4","content":"Acme requires customer-controlled inference. Helix requires internal-only access, auditability and separation between employee groups. Lumen is comfortable with managed AI for non-sensitive workflows."},
+    {"id":"d7","project_id":"p3","title":"Decision memory design","date":"2026-09-02","classification":2,"type":"technical_spec","source_system":"GitHub","author_id":"u4","content":"Memories should preserve who, what, when, why, confidence and evidence. The same fact can change over time; current truth must be distinguishable from historical truth."},
+    {"id":"d8","project_id":"p3","title":"Permissions model draft","date":"2026-09-04","classification":3,"type":"security_spec","source_system":"GitHub","author_id":"u5","content":"Access is evaluated before retrieval and again before answer composition. Agents inherit explicit scopes rather than defaulting to the employee's full clearance."},
+    {"id":"d9","project_id":"p2","title":"Atlas incident retrospective","date":"2026-08-12","classification":2,"type":"incident","source_system":"Jira","author_id":"u4","content":"A stale CRM field caused an automation to select the wrong workflow branch. The fix added source freshness metadata and a human approval step for ambiguous account state."},
+    {"id":"d10","project_id":"p3","title":"Executive thesis — Private Company Brain","date":"2026-09-10","classification":4,"type":"executive","source_system":"Confluence","author_id":"u1","content":"The product should become a private organizational intelligence layer: living memory, graph context, temporal decisions, permission-aware retrieval and model routing under customer control. Do not position as another chatbot."}
+  ],
+  "events": [
+    {"id":"e1","date":"2026-03-10","kind":"status","title":"Orion prototype started","project_id":"p1","actor_id":"u2","classification":2,"summary":"Initial Orion prototype used a shared hosted inference gateway."},
+    {"id":"e2","date":"2026-04-18","kind":"incident","title":"Enterprise load test exposes latency","project_id":"p1","actor_id":"u4","classification":2,"summary":"p95 latency exceeded target and noisy-neighbor behavior appeared under enterprise concurrency."},
+    {"id":"e3","date":"2026-04-25","kind":"decision","title":"Evaluate isolated inference cells","project_id":"p1","actor_id":"u2","classification":2,"summary":"Team chose to prototype customer-controlled private inference cells."},
+    {"id":"e4","date":"2026-05-12","kind":"decision","title":"Security makes isolation a release requirement","project_id":"p1","actor_id":"u5","classification":4,"summary":"Security review elevated tenant isolation and controlled model routing for regulated workloads."},
+    {"id":"e5","date":"2026-06-02","kind":"change","title":"Customer requirements consolidated","project_id":"p1","actor_id":"u4","classification":3,"summary":"Acme and Helix requirements were codified as private deployment acceptance criteria."},
+    {"id":"e6","date":"2026-07-20","kind":"change","title":"GPU scheduler work begins","project_id":"p1","actor_id":"u4","classification":2,"summary":"Engineering began scheduler work to improve GPU utilization inside private cells."},
+    {"id":"e7","date":"2026-08-28","kind":"status","title":"Private rollout selected for regulated workloads","project_id":"p1","actor_id":"u2","classification":2,"summary":"Private deployment became the default path for regulated customer workloads."},
+    {"id":"e8","date":"2026-09-05","kind":"change","title":"Final reliability work isolated","project_id":"p1","actor_id":"u4","classification":2,"summary":"Remaining gaps are automated failover, scheduler polish and operator health visibility."},
+    {"id":"e9","date":"2026-08-12","kind":"incident","title":"Atlas stale-data workflow incident","project_id":"p2","actor_id":"u4","classification":2,"summary":"Stale CRM state sent an automation down the wrong branch; freshness checks were added."}
+  ],
+  "messages": [
+    {"id":"m1","date":"2026-04-19","channel":"#orion-eng","author_id":"u4","classification":2,"project_id":"p1","source_system":"Slack","text":"The shared gateway is fine for demos, but at enterprise concurrency the noisy-neighbor behavior is real. We should isolate the inference path."},
+    {"id":"m2","date":"2026-05-13","channel":"#security-review","author_id":"u5","classification":4,"project_id":"p1","source_system":"Slack","text":"For regulated workloads, I am not comfortable with silent external model routing. Policy needs to be explicit and auditable."},
+    {"id":"m3","date":"2026-06-03","channel":"#acme-account","author_id":"u2","classification":3,"project_id":"p1","source_system":"Slack","text":"Acme's expansion depends on customer-controlled inference. They keep repeating that their prompts and operational data cannot cross the trust boundary."},
+    {"id":"m4","date":"2026-08-29","channel":"#northstar","author_id":"u1","classification":2,"project_id":"p3","source_system":"Slack","text":"The company brain cannot just return documents. It has to explain relationships, decisions, time and evidence."},
+    {"id":"m5","date":"2026-09-03","channel":"#northstar-security","author_id":"u5","classification":3,"project_id":"p3","source_system":"Slack","text":"We should evaluate permissions before retrieval so confidential memories never enter the model context by accident."},
+    {"id":"m6","date":"2026-09-08","channel":"#atlas","author_id":"u4","classification":2,"project_id":"p2","source_system":"Slack","text":"The Atlas incident is why freshness needs to travel with memory. A fact without time context can be actively dangerous."}
+  ],
+  "relationships": [
+    {"from":"u2","to":"p1","type":"leads","confidence":0.99},
+    {"from":"u4","to":"p1","type":"builds","confidence":0.98},
+    {"from":"u5","to":"p1","type":"secures","confidence":0.97},
+    {"from":"u2","to":"p2","type":"leads","confidence":0.96},
+    {"from":"u4","to":"p2","type":"builds","confidence":0.95},
+    {"from":"u1","to":"p3","type":"sponsors","confidence":0.99},
+    {"from":"u4","to":"p3","type":"designs","confidence":0.98},
+    {"from":"u5","to":"p3","type":"secures","confidence":0.97},
+    {"from":"c1","to":"p1","type":"requires","confidence":0.99},
+    {"from":"c2","to":"p1","type":"pilots","confidence":0.97},
+    {"from":"c3","to":"p2","type":"uses","confidence":0.94},
+    {"from":"u1","to":"c1","type":"executive_owner","confidence":0.90}
+  ],
+  "memories": [
+    {"id":"mem1","subject_type":"project","subject_id":"p1","memory_type":"current_truth","text":"Orion's current default for regulated workloads is customer-controlled private inference. Remaining work is mostly scheduler, failover and operator reliability.","date_from":"2026-08-28","date_to":null,"confidence":0.96,"classification":2,"source_ids":["d3","e7","e8"]},
+    {"id":"mem2","subject_type":"project","subject_id":"p1","memory_type":"decision_reason","text":"The move from shared inference to isolated cells was driven by measurable noisy-neighbor latency and later strengthened by security requirements for customer-controlled data isolation.","date_from":"2026-04-18","date_to":"2026-05-12","confidence":0.97,"classification":3,"source_ids":["d1","d2","e2","e4"]},
+    {"id":"mem3","subject_type":"project","subject_id":"p3","memory_type":"product_thesis","text":"Northstar should behave like a private organizational intelligence layer, not another enterprise chatbot. Core concepts are memory, graph, time, evidence and permissions.","date_from":"2026-09-02","date_to":null,"confidence":0.95,"classification":4,"source_ids":["d7","d8","d10","m4"]},
+    {"id":"mem4","subject_type":"customer","subject_id":"c1","memory_type":"account_memory","text":"Acme expansion is blocked primarily by trust-boundary concerns: customer-controlled inference and private handling of sensitive prompts.","date_from":"2026-06-02","date_to":null,"confidence":0.93,"classification":3,"source_ids":["d6","m3"]},
+    {"id":"mem5","subject_type":"system","subject_id":"atlas","memory_type":"lesson","text":"Agent/workflow context must carry freshness. Stale facts can route an otherwise correct automation down the wrong path.","date_from":"2026-08-12","date_to":null,"confidence":0.91,"classification":2,"source_ids":["d9","m6"]}
+  ],
+  "decisions": [
+    {"id":"dec1","project_id":"p1","title":"Adopt isolated private inference cells","date":"2026-04-25","status":"implemented","rationale":"Reduce noisy-neighbor risk and prepare for customer-controlled deployment.","owner_id":"u2","classification":2,"evidence_ids":["d1","e3","m1"]},
+    {"id":"dec2","project_id":"p1","title":"Require explicit model-routing policy for regulated workloads","date":"2026-05-12","status":"implemented","rationale":"Regulated data must not silently cross the company's trust boundary.","owner_id":"u5","classification":4,"evidence_ids":["d2","m2","e4"]},
+    {"id":"dec3","project_id":"p1","title":"Make private deployment the default for regulated customers","date":"2026-08-28","status":"current","rationale":"Customer evidence and security requirements converged on private deployment as the safer default.","owner_id":"u2","classification":3,"evidence_ids":["d3","d6","e7"]},
+    {"id":"dec4","project_id":"p3","title":"Build around organizational memory, not generic chat","date":"2026-09-02","status":"current","rationale":"Customers need relationships, temporal truth, evidence and permissions across systems.","owner_id":"u1","classification":4,"evidence_ids":["d5","d7","d10","m4"]}
+  ],
+  "connectors": [
+    {"id":"con-slack","name":"Slack","kind":"messaging","status":"synced","records":12640,"last_sync":"2026-09-15T16:40:00","description":"Channels, messages, threads and authored discussions."},
+    {"id":"con-github","name":"GitHub","kind":"code","status":"synced","records":8340,"last_sync":"2026-09-15T16:37:00","description":"Repos, PRs, issues, commits and code ownership signals."},
+    {"id":"con-drive","name":"Google Drive","kind":"documents","status":"synced","records":4210,"last_sync":"2026-09-15T16:32:00","description":"Docs, PDFs and project artifacts with source permissions."},
+    {"id":"con-notion","name":"Notion","kind":"knowledge","status":"synced","records":1880,"last_sync":"2026-09-15T16:35:00","description":"Specifications, plans, research and operating knowledge."},
+    {"id":"con-crm","name":"CRM","kind":"customer","status":"attention","records":9630,"last_sync":"2026-09-15T15:55:00","description":"Accounts, opportunities, contacts and customer state."}
+  ]
+}

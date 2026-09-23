@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-ink-50 text-ink-900 font-sans antialiased;
+  font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+}
+
+::selection {
+  background: #cfe0ef;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+*::-webkit-scrollbar-thumb {
+  background: #cfd4dc;
+  border-radius: 8px;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: #b6bcc7;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+@layer components {
+  .card {
+    @apply bg-white border border-ink-200/70 rounded-xl shadow-card;
+  }
+  .card-hover {
+    @apply transition-shadow duration-200 hover:shadow-pop cursor-pointer;
+  }
+  .eyebrow {
+    @apply text-[10.5px] font-semibold tracking-[0.14em] uppercase text-ink-400;
+  }
+  .num {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@layer utilities {
+  .animate-in {
+    animation: fade-up 0.45s cubic-bezier(0.22, 0.8, 0.36, 1) both;
+  }
+  .animate-in-1 { animation-delay: 40ms; }
+  .animate-in-2 { animation-delay: 90ms; }
+  .animate-in-3 { animation-delay: 140ms; }
+  .animate-in-4 { animation-delay: 190ms; }
+  .animate-in-5 { animation-delay: 240ms; }
+}
+
+@keyframes pb-pulse-dot {
+  0%, 100% { opacity: 0.35; transform: scale(0.9); }
+  50% { opacity: 1; transform: scale(1.1); }
+}
+.pulse-dot { animation: pb-pulse-dot 1.6s ease-in-out infinite; }
+
+@keyframes pb-dash {
+  to { stroke-dashoffset: -24; }
+}
+.flow-line { stroke-dasharray: 6 6; animation: pb-dash 1.2s linear infinite; }
